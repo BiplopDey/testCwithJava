@@ -6,8 +6,5 @@ public class HelloJNI {
     }
 
     public native void sayHello();
-
-    public static void main(String[] args) {
-        new HelloJNI().sayHello();
-    }
+    public native int sumMatrix(int[][] matrix);
 }
