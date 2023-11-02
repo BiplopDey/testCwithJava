@@ -18,7 +18,7 @@ JNIEXPORT void JNICALL Java_com_example_demo_HelloJNI_sayHello
 /*
  * Class:     com_example_demo_HelloJNI
  * Method:    sumMatrix
- * Signature: ([[I)I
+ * Signature: ([[C)I
  */
 JNIEXPORT jint JNICALL Java_com_example_demo_HelloJNI_sumMatrix
   (JNIEnv *, jobject, jobjectArray);

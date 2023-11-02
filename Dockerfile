@@ -13,7 +13,7 @@ COPY . .
 # Compile C code to shared library. No change needed here.
 RUN apt-get update && \
     apt-get install -y gcc && \
-    gcc -shared -fPIC -o libhello.so hello.c -I${JAVA_HOME}/include -I${JAVA_HOME}/include/linux && \
+    gcc -shared -fPIC -o libhello.so src/main/c/hello.c -I${JAVA_HOME}/include -I${JAVA_HOME}/include/linux && \
     # Clean up in the same layer to keep the image size down.
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
